@@ -1,0 +1,7 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "B"]
+per-file-ignores = { "tests/*" = ["E501"], "migrations/*" = ["E501"] }
+ignore = ["B008", "E501"]  # FastAPI's Depends/Query defaults

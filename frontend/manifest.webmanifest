@@ -1,0 +1,17 @@
+{
+  "id": "/app.html",
+  "name": "PLS Smart Study Assistant",
+  "short_name": "PLS Study",
+  "description": "Plan goals, schedule study time, keep notes and track your progress.",
+  "start_url": "/app.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F7F8FA",
+  "theme_color": "#4F6BED",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

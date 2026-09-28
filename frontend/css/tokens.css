@@ -1,0 +1,39 @@
+/* PLS design tokens. Bootstrap is mapped onto these in base.css. */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --pls-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* spacing (4px base) */
+  --pls-s1: 4px; --pls-s2: 8px; --pls-s3: 12px; --pls-s4: 16px; --pls-s5: 24px; --pls-s6: 32px; --pls-s7: 48px;
+
+  /* shape */
+  --pls-radius-card: 16px; --pls-radius-control: 12px; --pls-radius-pill: 999px;
+
+  /* motion */
+  --pls-ease: cubic-bezier(.2, .7, .2, 1); --pls-fast: 150ms; --pls-base: 200ms;
+
+  --pls-tap: 44px;
+  --pls-nav-h: 64px;
+
+  /* light theme (default) */
+  --pls-bg: #F7F8FA; --pls-surface: #FFFFFF; --pls-border: #E6E8EC;
+  --pls-text: #1A1D24; --pls-muted: #6B7280;
+  --pls-primary: #4F6BED; --pls-primary-rgb: 79, 107, 237; --pls-on-primary: #FFFFFF;
+  --pls-success: #2E9E6B; --pls-warning: #E59F1F; --pls-danger: #DC4A4A;
+  --pls-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 4px 12px rgba(16, 24, 40, .06);
+}
+
+[data-bs-theme="dark"] {
+  --pls-bg: #0F1115; --pls-surface: #171A21; --pls-border: #262B36;
+  --pls-text: #ECEEF2; --pls-muted: #9AA3B2;
+  --pls-primary: #7C93FF; --pls-primary-rgb: 124, 147, 255; --pls-on-primary: #0B0E1A;
+  --pls-success: #4CC38A; --pls-warning: #F5B94A; --pls-danger: #F26D6D;
+  --pls-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 12px rgba(0, 0, 0, .25);
+}

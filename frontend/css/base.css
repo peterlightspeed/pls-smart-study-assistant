@@ -1,0 +1,37 @@
+/* Maps Bootstrap 5.3 variables onto PLS tokens and sets the type scale. */
+:root, [data-bs-theme="light"], [data-bs-theme="dark"] {
+  --bs-body-font-family: var(--pls-font);
+  --bs-body-font-size: 1rem;
+  --bs-body-line-height: 1.5;
+  --bs-body-bg: var(--pls-bg);
+  --bs-body-color: var(--pls-text);
+  --bs-secondary-color: var(--pls-muted);
+  --bs-border-color: var(--pls-border);
+  --bs-border-radius: var(--pls-radius-control);
+  --bs-primary: var(--pls-primary);
+  --bs-primary-rgb: var(--pls-primary-rgb);
+  --bs-link-color: var(--pls-primary);
+  --bs-link-color-rgb: var(--pls-primary-rgb);
+  --bs-link-hover-color: var(--pls-primary);
+  --bs-focus-ring-color: rgba(var(--pls-primary-rgb), .35);
+}
+
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { font-feature-settings: "cv11", "ss01"; -webkit-font-smoothing: antialiased; overscroll-behavior-y: none; }
+
+h1, h2, h3 { font-weight: 600; letter-spacing: -0.01em; color: var(--pls-text); }
+h1 { font-size: 1.75rem; line-height: 34px; }
+h2 { font-size: 1.375rem; line-height: 28px; }
+h3 { font-size: 1.125rem; line-height: 24px; }
+.text-caption { font-size: .8125rem; line-height: 18px; color: var(--pls-muted); }
+
+/* Inputs never drop below 16px (prevents iOS zoom-on-focus) */
+.form-control, .form-select { font-size: 1rem; min-height: var(--pls-tap); }
+
+:focus-visible { outline: 2px solid var(--pls-primary); outline-offset: 2px; }
+.skip-link { position: absolute; left: -999px; top: 8px; z-index: 2000; background: var(--pls-surface); padding: 8px 12px; border-radius: 8px; }
+.skip-link:focus { left: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}
